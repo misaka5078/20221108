@@ -15,11 +15,45 @@ HTTP vs HTTPs
     - HTTPS經由HTTP進行通訊，但利用SSL/TLS來加密封包。
     - HTTPS開發的主要目的，是提供對網站伺服器的身分認證，保護交換資料的隱私與完整性。
 DNS vs DNSsec
-
+  - DNS
+    - Domain Name System 域名系統
+    - 它作為將域名和IP位址相互對映的一個分散式資料庫，能夠使人更方便地存取網際網路
+    - 對於每一級域名長度的限制是63個字元，域名總長度則不能超過253個字元。
+  - DNSsec
+    - 域名系統安全擴充（Domain Name System Security Extensions)
+    - 是Internet工程任務組 （IETF）的對確保由域名系統 （DNS）中提供的關於網際網路協定（IP）網路使用特定類型的資訊規格套件。
+    - 它是對DNS提供給DNS客戶端（解析器）的DNS資料來源進行認證，並驗證不存在性和校驗資料完整性驗證，但不提供機密性和可用性。
 telnet vs ssh
+  - talnet
+    - 是一種應用層協議，使用於網際網路及區域網中，使用虛擬終端機的形式，提供雙向、以文字字串為主的命令列介面互動功能。
+    - 是網際網路遠端登錄服務的標準協議和主要方式，常用於伺服器的遠端控制，可供使用者在本地主機執行遠端主機上的工作。
+  - ssh
+    - 安全外殼協定（Secure Shell Protocol)
+    - 是一種加密的網路傳輸協定，可在不安全的網路中為網路服務提供安全的傳輸環境。
+    - 最常見的用途是遠端登入系統，人們通常利用SSH來傳輸命令列介面和遠端執行命令。
+    - SSH使用頻率最高的場合是類Unix系統，但是Windows作業系統也能有限度地使用SSH。
 ftp vs sftp
+  - ftp
+    - 檔案傳輸協定（File Transfer Protocol)
+    - 是一個用於在電腦網路上在客戶端和伺服器之間進行檔案傳輸的應用層協定。
+    - FTP有著極高的延時，從開始請求到第一次接收需求資料之間的時間，會非常長；並且不時的必須執行一些冗長的登入行程。
+  - sftp
+    - 安全檔案傳送協定(Secret File Transfer Protocol)
+    - 是一數據流連線，提供檔案存取、傳輸和管理功能的網路傳輸協定。
 smtp, pop3
+  - smtp
+    - 簡單郵遞傳送協定(Simple Mail Transfer Protocol)
+    - 可用在傳送和接收電子郵件的資訊，但SMTP通常用作傳送電子郵件資訊，而不是接收。
+    - SMTP是一個「推播」協定，它不允許從遠端伺服器上接收訊息
+  - pop3
+    - 郵局協議（Post Office Protocol)
+    - 此協定主要用於支援使用客戶端遠端管理在伺服器上的電子郵件。
+    - POP支援離線郵件處理。其具體過程是：郵件傳送到伺服器上，電子郵件客戶端呼叫郵件客戶機程式以連接伺服器，並下載所有未閱讀的電子郵件。
 SNMP
+  - SNMP
+    - 簡單網路管理協定（Simple Network Management Protocol）
+    - 該協定能夠支援網路管理系統，用以監測連接到網路上的裝置是否有任何引起管理上關注的情況。
+    - 它由一組網路管理的標準組成，包含一個應用層協定（application layer protocol）、資料庫模式（database schema），和一組資料物件。
 簡述底下傳輸層協定(英文全名與簡單功能說明):
 TCP vs UDP
 reliable(可靠的) vs unreliable(不可靠的)
