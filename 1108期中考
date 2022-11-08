@@ -56,9 +56,27 @@ SNMP
     - 它由一組網路管理的標準組成，包含一個應用層協定（application layer protocol）、資料庫模式（database schema），和一組資料物件。
 簡述底下傳輸層協定(英文全名與簡單功能說明):
 TCP vs UDP
+  - TCP
+    - 傳輸控制協定（Transmission Control Protocol)
+    - 是一種連接導向的、可靠的、基於位元組流的傳輸層通信協定。
+    - 應用層向TCP層傳送用於網間傳輸的、用8位元位元組表示的資料流，然後TCP把資料流分割成適當長度的報文段（通常受該電腦連接的網路的資料鏈路層的最大傳輸單元（MTU）的限制）。
+  - UDP
+    - 使用者資料包協定（User Datagram Protocol)
+    - 是一個簡單的面向資料包的通信協定，位於OSI模型的傳輸層。
+    - UDP只提供資料的不可靠傳遞，它一旦把應用程式發給網路層的資料傳送出去，就不保留資料備份。
+    - UDP適用於不需要或在程式中執行錯誤檢查和糾正的應用，它避免了協定棧中此類處理的開銷。
 reliable(可靠的) vs unreliable(不可靠的)
 TCP three-way handshaking(三項交握)
+    - TCP 是一種 連接導向 (connection-oriented) 的通訊協定，
+    - 三向交握 (Three-way Handshake)， 是其建立虛擬連線 (virtual connection) 的方式。
+    - 又稱為 三向式握手、三路交握 …，其實就是 三次訊息的交換。
 TCP syn flood attack
+    - SYN 洪水攻擊 (半開放式攻擊) 是一種阻斷服務 (DDoS) 攻擊。
+    - 旨在透過消耗所有可用的伺服器資源，使伺服器無法用於合法流量。透過重複傳送初始連線要求 (SYN) 封包。
 簡述底下網路層協定(英文全名與簡單功能說明):
 IP
+    - 網際協定（Internet Protocol），一種應用於網際網路的電腦網路協定
 ICMP
+    - 網際網路控制訊息協定（Internet Control Message Protocol)
+    - 它用於網際網路協定（IP）中傳送控制訊息，提供可能發生在通訊環境中的各種問題回饋。
+    - 通過這些資訊，使管理者可以對所發生的問題作出診斷，然後採取適當的措施解決。
